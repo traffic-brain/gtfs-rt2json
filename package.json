@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "gtfs-rt2json",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate:pbjs": "pbjs -t static-module -o src/libs/pb.js src/schemas/gtfs-realtime.proto",
+    "generate:pbts": "pbts -o src/libs/pb.d.ts src/libs/pb.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traffic-brain/gtfs-rt2json.git"
+  },
+  "author": "Traffic Brain, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/traffic-brain/gtfs-rt2json/issues"
+  },
+  "homepage": "https://github.com/traffic-brain/gtfs-rt2json#readme",
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "parcel": "^2.6.2",
+    "process": "^0.11.10",
+    "protobufjs-cli": "^1.0.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "volta": {
+    "node": "16.16.0"
+  }
+}
